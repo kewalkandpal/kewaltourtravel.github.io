@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2{
+	font-size:20px!important;
+	font-weight:bold!important;
+}
+h3{
+	font-weight:bold!important;
+}
+.fa{
+	
+	color:#c70039;	
+}
+li{
+   list-style: none;
+}
+
+
+           /* navbar*/
+
+.nav-link:hover{
+	background: yellowgreen;
+}
+.pushUp{
+	
+	-webkit-animation: myanim 1s infinite alternate;
+}
+@-webkit-keyframes myanim { 
+	0% { 
+		color:fuchsia;
+		
+	} 
+	25%{
+		color:#eee;
+	}	
+	50%{
+	
+		color:#D7D707;
+		
+	}
+	75%{
+		color:greenyellow;
+		
+	}
+
+	100% { 
+		color: #00abff;
+		
+	} 
+} 
+
+.carousel-inner img{
+	width:100%;
+	height:655px;
+}
+.three-div{
+	width:100%;
+	height:auto;
+    background: #eee;
+    padding: 20px 0px;
+
+}
+.three-div .card{
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+}
+.three-div .card:hover{
+    background: purple;
+    color:white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+    transition: 0.7s ease;
+}
+.three-div .card-header{
+	text-align: center;
+}
+
+.three-div .card-body{
+	text-align: center;
+	text-transform: capitalize;
+}
+.three-div .card-body h2{
+	text-transform: uppercase;
+}
+.three-div .card-footer{
+	text-align: center;
+}
+
+.three-div .card-footer .btn{
+	position:relative;
+	z-index: 1;
+	color:black;
+	outline: none;
+	border:none;
+	
+}
+.three-div .card-footer .btn:before{
+	content:"";
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:0%;
+	height:100%;
+	background:yellow;
+	border-radius: 5px;
+}
+.three-div .card-footer .btn:hover:before{
+   width:100%;
+   transition: 0.4s;
+   z-index: -1;
+
+}
+.services{
+	width:100%;
+	height:auto;
+	background: #eee;
+	padding: 50px 0px;
+	
+}
+.service-icon{
+	display: flex;
+	justify-content: center;
+	
+}
+.total-trip{
+	width:100%;
+	height:auto;
+	margin-top: 100px;
+}
+.pricing{
+	width:100%;
+	height: auto;
+	position: relative;
+	margin-top: 100px;
+	padding: 20px 0px;
+}
+.pricing:before{
+	content: "";
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	background: linear-gradient(-170deg,lightblue 55%,white 0%);
+	z-index: -1;
+}
+.pricing .card{
+	transition: 0.6s;
+}
+.pricing .card-header{
+	background: linear-gradient(#D7D707,#AED707);
+	color:white;
+}
+.pricing .btn:hover{
+	background: #94E323;
+	color:white;
+	outline: none;
+	border:none;
+}
+
+.pricing span{
+	color:red;
+	font-size: 30px;
+	font-weight: bold;
+}
+.pricing h3{
+	color:#F629DD;
+	font-weight: bold;
+}
+.pricing .card:hover{
+	transform:translateY(-20px);
+	transition: 0.6s;
+}
+.pricing .card:hover span{
+	color: #94E323;
+}
+.our-client{
+	width:100%;
+	height:auto;
+	margin-top: 100px;
+}
+.our-client .box{
+	margin: 2px;
+	text-align: center;
+	padding: 10px 5px;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.9);
+}
+.our-client .box:hover{
+	background: yellowgreen;
+	color:white;
+	transition:0.2s;
+}
+.contact{
+	width:100%;
+	margin-top: 100px;
+	height:auto;
+	position: relative;
+}
+.contact:before{
+	content: "";
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	background: linear-gradient(330deg,lightblue 55%,white 0%);
+	z-index: -1;
+}
+.form-button button{
+	text-align: center;
+	border-radius: 100px;
+	padding: 5px 30px;
+	outline: none;
+	border:none;
+	font-size: 18px;
+	font-weight: bold;
+	color:lightblue;
+	margin-bottom: 10px;
+	
+}
+ .form-button button{
+	background: #fff;
+	color:#50d1c0;
+}
+.footer-section{
+	width:100%;
+	margin-top: 100px;
+	height:auto;
+	background: #50d1c0;
+	color:green;
+	padding: 30px 0px 30px 0px;
+}
+.footer-contain h3{
+	font-weight: bold;
+	color:purple;
+}
+.footer-contain p{
+	padding-top:15px;
+	text-transform: capitalize;
+	color:white;
+}
+.footer-contain li a{
+	display: block;
+	text-decoration: none;
+	font-size:18px;
+	font-weight: bold;
+	color:white;
+	padding-top:15px;
+}
+.news-letter input{
+	background:purple!important;
+	color:white!important;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+
+}
+.news-letter span{
+	background:black;
+	color:white!important;
+	border-radius: 10px;
+	cursor: pointer;
+
+}
+#mybtn{
+	position: fixed;
+	bottom:20px;
+	right:30px;
+	z-index: 99;
+	border: none;
+	color:white;
+	background: #00abff;
+	padding: 10px;
+	border-radius:10px;
+}
+#mybtn:hover{
+	background: #606060;
+}
+
+
+
+                          /* media query */
+
+
+@media screen and (max-width:760px){
+        .three-div .kk{
+        	height:auto; margin-bottom:20px;
+        }
+        .pricing .kv{
+        	height:auto; margin-bottom:25px;
+        }
+}
+
+
+
+
+
